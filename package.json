@@ -1,0 +1,15 @@
+{
+  "name": "mxd-express",
+  "description": "Initialize express with the right port and a /ping route",
+  "version": "1.0.0",
+  "homepage": "http://github.com/maxdome/express",
+  "readmeFilename": "README.md",
+  "main": "src/lib.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdome/express.git"
+  }
+}
