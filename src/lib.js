@@ -8,7 +8,7 @@ module.exports = config => {
 
   const app = express();
   app.set('x-powered-by', false);
-  app.get('/ping', (req, res) => {
+  app.use('/ping', (req, res) => {
     res.send();
   });
   app.listen(config.port, config.hostname);
