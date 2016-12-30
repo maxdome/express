@@ -4,7 +4,7 @@ const express = require('express');
 
 module.exports = config => {
   config.port = process.env.PORT || process.env.MXD_PORT || config.port || 80;
-  config.hostname = process.env.MXD_HOSTNAME || config.hostname;
+  config.hostname = process.env.HOSTNAME || process.env.MXD_HOSTNAME || config.hostname;
 
   const app = express();
   app.set('x-powered-by', false);
@@ -13,5 +13,5 @@ module.exports = config => {
   });
   app.listen(config.port, config.hostname);
 
-  return { app: app, express: express };
+  return { app, express };
 };
